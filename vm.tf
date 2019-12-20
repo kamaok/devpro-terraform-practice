@@ -20,6 +20,7 @@ resource "aws_instance" "web" {
   subnet_id  = aws_subnet.tf_subnet.id
   instance_type = var.instance_config.type
   vpc_security_group_ids = [aws_security_group.tf_sg.id]
+  key_name      = "aws-us-east-1-ssh-keys"
   tags = {
     Env = var.instance_config.env
     Name = var.instance_config.name
