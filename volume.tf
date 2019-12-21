@@ -1,7 +1,7 @@
 resource "aws_ebs_volume" "volume_ssd" {
   availability_zone = var.instance_config.availability_zone
   size              = 8
-  type				= "gp2"
+  type              = "gp2"
 
   tags = {
     Name = "ssd"
@@ -12,7 +12,7 @@ resource "aws_ebs_volume" "volume_ssd" {
 resource "aws_ebs_volume" "volume_hdd" {
   availability_zone = var.instance_config.availability_zone
   size              = 1
-  type				= "standard"
+  type              = "standard"
 
   tags = {
     Name = "hdd"

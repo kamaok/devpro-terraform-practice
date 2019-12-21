@@ -4,10 +4,10 @@
 
 variable "instance_config" {
   type = object({
-    availability_zone 	= string,
-    type    			= string,
-    name    			= string,
-    env     			= string
+    availability_zone = string,
+    type              = string,
+    name              = string,
+    env               = string
   })
 }
 
